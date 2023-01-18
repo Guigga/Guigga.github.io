@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadora.js"></script>
+    <title>Guiga Calculadora</title>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div class="components">
+            <div class="display">
+                <p id="resultado"></p>
+            </div>
+            <div class="buttons">
+                <div class="line1">
+                    <div class="b" onclick="insert('7')">7</div>
+                    <div class="b" onclick="insert('8')">8</div>
+                    <div class="b" onclick="insert('9')">9</div>
+                    <div class="b" onclick="clean()"><img src="img/backspace.png"></div>
+                </div>
+                <div class="line2">
+                    <div class="b" onclick="insert('4')">4</div>
+                    <div class="b" onclick="insert('5')">5</div>
+                    <div class="b" onclick="insert('6')">6</div>
+                    <div class="b" onclick="insert('/')">÷</div>
+                </div>
+                <div class="line3">
+                    <div class="b" onclick="insert('1')">1</div>
+                    <div class="b" onclick="insert('2')">2</div>
+                    <div class="b" onclick="insert('3')">3</div>
+                    <div class="b" onclick="insert('*')">x</div>
+                </div>
+                <div class="line4">
+                    <div class="b" onclick="insert('0')">0</div>
+                    <div class="bps" onclick="insert('+')">+</div>
+                    <div class="bps" onclick="insert('-')">-</div>
+                    <div class="bequal" onclick="calcular()">=</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
